@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public SoundController soundController;
+
+    public SoundController GetSoundController()
+    {
+        return soundController;
+    }
+
     public void GamePause(bool pause)
     {
         if (pause)

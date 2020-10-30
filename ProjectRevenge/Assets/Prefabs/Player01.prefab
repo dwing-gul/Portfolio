@@ -116,16 +116,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HPBar: {fileID: 0}
-  Speed: 1.5
-  JumpSpeed: 3.5
-  MaxHP: 10
+  Speed: 1.2
+  MaxHP: 50
   attackArea: {fileID: 7501717080796818673}
-  AttackPower: 1
+  AttackPower: 2
+  mbDead: 0
   MinX: 0
   MaxX: 0
   newMinX: 0
   mbEnter: 0
   mbRide: 0
+  mbGround: 0
+  boss: {fileID: 0}
 --- !u!1 &7704997259223204019
 GameObject:
   m_ObjectHideFlags: 0

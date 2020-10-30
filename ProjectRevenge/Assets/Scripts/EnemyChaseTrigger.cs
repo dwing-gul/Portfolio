@@ -9,7 +9,7 @@ public class EnemyChaseTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Shield"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Shield") || collision.gameObject.CompareTag("Vehicle"))
         {
             Owner.SetTarget(collision.transform);
         } 
@@ -17,7 +17,7 @@ public class EnemyChaseTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Shield"))
+        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Shield") || collision.gameObject.CompareTag("Vehicle"))
         {
             Owner.RemoveTarget();
         }

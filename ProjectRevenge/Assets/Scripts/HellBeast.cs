@@ -29,7 +29,7 @@ public class HellBeast : Enemy
 
         if (isHit)
         {
-            transform.position = new Vector3(Random.Range(145, 155), transform.position.y, 0);
+            transform.position = new Vector3(Random.Range(MinX, MaxX), transform.position.y, 0);
             mState = eEnemyState.Idle;
         }
     }

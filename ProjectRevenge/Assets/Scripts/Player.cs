@@ -13,8 +13,6 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     protected float Speed; // 움직일 때의 속도
-    [SerializeField]
-    protected float JumpSpeed; // 점프 시 주어지는 힘
 
     [SerializeField]
     protected int MaxHP; // 최대 체력
@@ -29,9 +27,7 @@ public class Player : MonoBehaviour
     public bool mbDead;
     private bool mbHit;
     public float MinX, MaxX;
-    public float newMinX;
 
-    public bool mbEnter;
     public bool mbRide;
     private bool mbInteractUp;
     private bool mbInteractDown;
@@ -50,7 +46,6 @@ public class Player : MonoBehaviour
         mbDead = false;
         mbAttackState = false;
         mbHit = false;
-        mbEnter = false;
         mbRide = false;
         mbInteractUp = false;
         mbInteractDown = false;
@@ -152,15 +147,6 @@ public class Player : MonoBehaviour
         if (!mbHit)
         {
             mAnimator.SetBool(AnimHash.HitBody, false);
-        }
-    }
-
-    protected void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("CameraTrigger"))
-        {
-            mbEnter = true;
-            MinX = newMinX;
         }
     }
 

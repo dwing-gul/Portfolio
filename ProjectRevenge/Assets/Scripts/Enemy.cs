@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ public class Enemy : MonoBehaviour
     protected Animator mAnimator;
     protected Rigidbody2D mRigidbody2D;
     [SerializeField]
-    private float MoveSpeed;
+    protected float MoveSpeed;
 
     protected eEnemyState mState;
     protected Transform mTarget;
@@ -125,17 +126,24 @@ public class Enemy : MonoBehaviour
         mAttackFlag = isEnter;
         if (mAttackFlag)
         {
-            mState = eEnemyState.Attack;   
+            mState = eEnemyState.Attack;
 
-            //플레이어의 Hit함수에 데미지 전달
-            if (mAttackFlag && mTarget.CompareTag("Player") && (ForNotEarlyAttack == 0))
+            try
             {
-                mTarget.gameObject.SendMessage("Hit", HitDamage, SendMessageOptions.DontRequireReceiver);
-                UnityEngine.Debug.Log(HitDamage);
+                //플레이어의 Hit함수에 데미지 전달
+                if (mAttackFlag && mTarget.CompareTag("Player") && (ForNotEarlyAttack == 0))
+                {
+                    mTarget.gameObject.SendMessage("Hit", HitDamage, SendMessageOptions.DontRequireReceiver);
+                    UnityEngine.Debug.Log(HitDamage);
+                }
+                else if (mAttackFlag && mTarget.CompareTag("Shield"))
+                {
+                    mTarget.gameObject.SendMessage("Hit", 0, SendMessageOptions.DontRequireReceiver);
+                }
             }
-            else if(mAttackFlag && mTarget.CompareTag("Shield"))
+            catch(NullReferenceException ex)
             {
-                mTarget.gameObject.SendMessage("Hit", 0, SendMessageOptions.DontRequireReceiver);
+                
             }
         }
 
