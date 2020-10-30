@@ -131,12 +131,12 @@ public class Enemy : MonoBehaviour
             try
             {
                 //플레이어의 Hit함수에 데미지 전달
-                if (mAttackFlag && mTarget.CompareTag("Player") && (ForNotEarlyAttack == 0))
+                if (mTarget.CompareTag("Player") && (ForNotEarlyAttack == 0))
                 {
                     mTarget.gameObject.SendMessage("Hit", HitDamage, SendMessageOptions.DontRequireReceiver);
                     UnityEngine.Debug.Log(HitDamage);
                 }
-                else if (mAttackFlag && mTarget.CompareTag("Shield"))
+                else if (mTarget.CompareTag("Shield"))
                 {
                     mTarget.gameObject.SendMessage("Hit", 0, SendMessageOptions.DontRequireReceiver);
                 }

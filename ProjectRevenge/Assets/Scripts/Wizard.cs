@@ -53,7 +53,6 @@ public class Wizard : Enemy
     {
         FireBall fireBall = fireBallPool.GetFromPool();
         fireBall.transform.position = FireBallPos.position;
-        //fireBall.transform.LookAt(target.transform.position);
     }
 
     public new void DeadMotion(bool mbDead)
