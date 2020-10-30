@@ -39,15 +39,6 @@ void matrix_all_pairs(int W[MAX_VERTICES][MAX_VERTICES])
         }
         m *= 2;
     } 
-
-    /*for (int i = 0; i < MAX_VERTICES; i++)
-    {
-        for (int j = 0; j < MAX_VERTICES; j++)
-        {
-            cout << L[m][i][j] << " ";
-        }
-        cout << endl;
-    }*/
 }
 
 void dijkstra_all_pairs()
@@ -95,12 +86,6 @@ void dijkstra_all_pairs()
                 }
             }
         }
-
-        /*for (int i = 0; i < MAX_VERTICES; i++)
-        {
-            cout << dist[i] << " ";
-        }
-        cout << endl;*/
     }
 }
 
