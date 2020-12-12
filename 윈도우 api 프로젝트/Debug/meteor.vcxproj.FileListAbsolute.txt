@@ -1,0 +1,2 @@
+D:\programing\meteor\Debug\meteor.exe
+D:\programing\meteor\Debug\meteor.pdb
