@@ -27,6 +27,17 @@ public class Player01 : Player
             mRigidbody2D.velocity = new Vector2(0, mRigidbody2D.velocity.y);
         }
 
+        if(inputShield)
+        {
+            mAnimator.SetBool(AnimHash.Shield, true);
+            mbShieldState = true;
+        }
+        else
+        {
+            mAnimator.SetBool(AnimHash.Shield, false);
+            mbShieldState = false;
+        }
+        /*
         if (Input.GetButtonDown("ShieldBlock"))
         {
             mAnimator.SetBool(AnimHash.Shield, true);
@@ -37,7 +48,7 @@ public class Player01 : Player
         {
             mAnimator.SetBool(AnimHash.Shield, false);
             mbShieldState = false;
-        }
+        }*/
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

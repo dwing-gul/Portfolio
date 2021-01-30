@@ -542,10 +542,10 @@ TextureImporter:
       name: Kit Pixel Art_6
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 193
-        width: 409
-        height: 398
+        x: 1449
+        y: 303
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1193,10 +1193,10 @@ TextureImporter:
       name: Kit Pixel Art_36
       rect:
         serializedVersion: 2
-        x: 808
-        y: 194
-        width: 143
-        height: 135
+        x: 741
+        y: 273
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1403,10 +1403,10 @@ TextureImporter:
       name: Kit Pixel Art_46
       rect:
         serializedVersion: 2
-        x: 1213
-        y: 3
-        width: 315
-        height: 57
+        x: 1463
+        y: 303
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

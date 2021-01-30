@@ -34,6 +34,13 @@ public class Player : MonoBehaviour
     private int floor;
     public bool mbGround;
 
+    public bool inputLeft = false;
+    public bool inputRight = false;
+    public bool inputUp = false;
+    public bool inputDown = false;
+    public bool inputAttack = false;
+    public bool inputShield = false;
+
     // Start is called before the first frame update
     protected void Start()
     {
@@ -67,31 +74,47 @@ public class Player : MonoBehaviour
         {
             float horizontal = Input.GetAxis("Horizontal");
 
-            if (horizontal > 0)
+            if(inputRight)//if (horizontal > 0)
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 mAnimator.SetBool(AnimHash.Walk, true);
+                mRigidbody2D.velocity = new Vector2(Speed, mRigidbody2D.velocity.y); //이동시 힘을 주는 방향
             }
-            else if (horizontal < 0)
+            else if(inputLeft)//else if (horizontal < 0)
             {
                 // 캐릭터 몸체 회전
                 transform.rotation = Quaternion.Euler(0, 180, 0);
                 mAnimator.SetBool(AnimHash.Walk, true);
+                mRigidbody2D.velocity = new Vector2((-1) * Speed, mRigidbody2D.velocity.y); //이동시 힘을 주는 방향
             }
-            else
+            else if(!inputRight && !inputLeft)//else
             {
                 mAnimator.SetBool(AnimHash.Walk, false);
             }
 
-            mRigidbody2D.velocity = new Vector2(horizontal * Speed, mRigidbody2D.velocity.y); //이동시 힘을 주는 방향
+            //mRigidbody2D.velocity = new Vector2(horizontal * Speed, mRigidbody2D.velocity.y); //이동시 힘을 주는 방향
 
-            if (Input.GetButtonDown("Attack"))
+            if(inputAttack)//if (Input.GetButtonDown("Attack"))
             {
                 mAnimator.SetBool(AnimHash.Attack, true);
                 mbAttackState = true;
             }
+            else
+            {
+                mAnimator.SetBool(AnimHash.Attack, false);
+            }
 
-            if (Input.GetButtonUp("Attack"))
+            if(inputUp)
+            {
+                mbInteractUp = true;
+            }
+
+            if(inputDown)
+            {
+                mbInteractDown = true;
+            }
+
+            /*if (Input.GetButtonUp("Attack"))
             {
                 mAnimator.SetBool(AnimHash.Attack, false);
             }
@@ -104,7 +127,7 @@ public class Player : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.DownArrow))
             {
                 mbInteractDown = true;
-            }
+            }*/
         }
     }
 
