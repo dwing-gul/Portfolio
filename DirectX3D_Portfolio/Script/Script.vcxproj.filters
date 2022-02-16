@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default">
+      <UniqueIdentifier>{d485862f-41ab-4ed2-9048-f6a39ac10304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptManager">
+      <UniqueIdentifier>{6bfbccec-e150-47a9-b081-60ada8a1f4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode">
+      <UniqueIdentifier>{6939a0b1-e51c-4417-b97e-30b3fc716eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript">
+      <UniqueIdentifier>{c697c575-0da0-4d75-a1c0-41277eba71a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\PlayerScript">
+      <UniqueIdentifier>{81424e3b-4108-4592-ac2a-7538022afac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{aab6067a-d6e3-4ffd-90d0-bc11fdb6001b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{0e035d98-40ad-4cac-8f7c-f9a69407ed57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\MonsterScript">
+      <UniqueIdentifier>{f7b001a0-d30c-48e0-8730-01e132aa3fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\PlayerScript\Aya">
+      <UniqueIdentifier>{f730383e-fbff-45a2-9de3-2b13ce2249de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\PlayerScript\LiDilin">
+      <UniqueIdentifier>{e92f7d9d-60a6-405c-9258-8ba98fe1a31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\PlayerScript\HyunWoo">
+      <UniqueIdentifier>{fa716d45-30f5-4caa-8185-4419cb90fbb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript">
+      <UniqueIdentifier>{45783728-237e-4c07-a114-27f0dee4b369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\PlayerScript\Aya\BulletScript">
+      <UniqueIdentifier>{a8d1b541-d94d-409f-ad13-d089dcc0910c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\SkillUI">
+      <UniqueIdentifier>{ecd791f6-94da-462d-a090-90608d1fb950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\FontUI">
+      <UniqueIdentifier>{487d889c-b88f-45d0-9778-b161b024cf4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\ButtonUI">
+      <UniqueIdentifier>{13cbc74c-7d4d-4c3c-a2db-48ce9ec473a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\HPBarUI">
+      <UniqueIdentifier>{f036160d-e6e6-4a49-ba17-d83063fc7b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\ItemBoxUI">
+      <UniqueIdentifier>{a89199b0-ca14-4b34-b45d-0e55f8cc3c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\LightScript">
+      <UniqueIdentifier>{03c0e432-0720-4ba2-8c0a-93ffc548cc92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\CameraScript">
+      <UniqueIdentifier>{2764abcb-dc48-4d8b-9d51-51e1d7e3173e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\PictureUI">
+      <UniqueIdentifier>{cde61bc1-0218-4365-9542-d48281b97bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\TrackingUI">
+      <UniqueIdentifier>{ca424488-d217-4962-96b0-88fd24ad8339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\ObjectScript\HitBoxScript">
+      <UniqueIdentifier>{4b47d385-b051-478c-b867-41700b88372e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript\SwitchingUI">
+      <UniqueIdentifier>{fb03b17e-1cc6-4a2e-aa7a-da3b92f8e543}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="CScriptManager.h">
+      <Filter>ScriptManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLayerUpdateBox.h">
+      <Filter>ScriptCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CMouseRay.h">
+      <Filter>ScriptCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjectScript.h">
+      <Filter>ScriptCode\ObjectScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerScript.h">
+      <Filter>ScriptCode\ObjectScript\PlayerScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterScript.h">
+      <Filter>ScriptCode\ObjectScript\MonsterScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CAya.h">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\Aya</Filter>
+    </ClInclude>
+    <ClInclude Include="CHyunwooScript.h">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\HyunWoo</Filter>
+    </ClInclude>
+    <ClInclude Include="CLiDailin.h">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\LiDilin</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemSpawnScript.h">
+      <Filter>ScriptCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CUIScript.h">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CBulletScript.h">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\Aya\BulletScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkillUIScript.h">
+      <Filter>ScriptCode\UIScript\SkillUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CBarUIScript.h">
+      <Filter>ScriptCode\UIScript\HPBarUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CButtonUIScript.h">
+      <Filter>ScriptCode\UIScript\ButtonUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CFontUIScript.h">
+      <Filter>ScriptCode\UIScript\FontUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemBoxUIScript.h">
+      <Filter>ScriptCode\UIScript\ItemBoxUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CLightScript.h">
+      <Filter>ScriptCode\LightScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CCameraScript.h">
+      <Filter>ScriptCode\CameraScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CEffectScript.h">
+      <Filter>ScriptCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CIGItemObjScript.h">
+      <Filter>ScriptCode</Filter>
+    </ClInclude>
+    <ClInclude Include="CPictureUIScript.h">
+      <Filter>ScriptCode\UIScript\PictureUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CTrackingUIScript.h">
+      <Filter>ScriptCode\UIScript\TrackingUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CHitBoxScript.h">
+      <Filter>ScriptCode\ObjectScript\HitBoxScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CSwitchUIScript.h">
+      <Filter>ScriptCode\UIScript\SwitchingUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterCreateScript.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CAIPointScript.h">
+      <Filter>ScriptCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="CScriptManager.cpp">
+      <Filter>ScriptManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLayerUpdateBox.cpp">
+      <Filter>ScriptCode</Filter>
+    </ClCompile>
+    <ClCompile Include="CMouseRay.cpp">
+      <Filter>ScriptCode</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjectScript.cpp">
+      <Filter>ScriptCode\ObjectScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerScript.cpp">
+      <Filter>ScriptCode\ObjectScript\PlayerScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterScript.cpp">
+      <Filter>ScriptCode\ObjectScript\MonsterScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CAya.cpp">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\Aya</Filter>
+    </ClCompile>
+    <ClCompile Include="CHyunwooScript.cpp">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\HyunWoo</Filter>
+    </ClCompile>
+    <ClCompile Include="CLiDailin.cpp">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\LiDilin</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemSpawnScript.cpp">
+      <Filter>ScriptCode</Filter>
+    </ClCompile>
+    <ClCompile Include="CUIScript.cpp">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CBulletScript.cpp">
+      <Filter>ScriptCode\ObjectScript\PlayerScript\Aya\BulletScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillUIScript.cpp">
+      <Filter>ScriptCode\UIScript\SkillUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CBarUIScript.cpp">
+      <Filter>ScriptCode\UIScript\HPBarUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CButtonUIScript.cpp">
+      <Filter>ScriptCode\UIScript\ButtonUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CFontUIScript.cpp">
+      <Filter>ScriptCode\UIScript\FontUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemBoxUIScript.cpp">
+      <Filter>ScriptCode\UIScript\ItemBoxUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CLightScript.cpp">
+      <Filter>ScriptCode\LightScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CCameraScript.cpp">
+      <Filter>ScriptCode\CameraScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CEffectScript.cpp">
+      <Filter>ScriptCode</Filter>
+    </ClCompile>
+    <ClCompile Include="CIGItemObjScript.cpp">
+      <Filter>ScriptCode</Filter>
+    </ClCompile>
+    <ClCompile Include="CPictureUIScript.cpp">
+      <Filter>ScriptCode\UIScript\PictureUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CTrackingUIScript.cpp">
+      <Filter>ScriptCode\UIScript\TrackingUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CHitBoxScript.cpp">
+      <Filter>ScriptCode\ObjectScript\HitBoxScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CSwitchUIScript.cpp">
+      <Filter>ScriptCode\UIScript\SwitchingUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterCreateScript.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CAIPointScript.cpp">
+      <Filter>ScriptCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Origin">
+      <UniqueIdentifier>{fa54415a-1449-4e79-b258-daa259162416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{7e2ec555-2a33-4dfb-bcc2-2abbea6879ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode">
+      <UniqueIdentifier>{e84d6095-39cc-4165-a78e-0cc08042afc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute">
+      <UniqueIdentifier>{4909f5d6-5333-4467-b709-d91626823dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{1dd6cf7c-1e7e-466b-9494-dd2749b26ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\01. Header">
+      <UniqueIdentifier>{f66776a7-be2e-468d-a8d3-f31e9751e672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Device">
+      <UniqueIdentifier>{75ea95c4-ae7c-4b5c-b1ab-3c9fbfe28a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager">
+      <UniqueIdentifier>{c70ebbcb-7ba0-46d4-bc8e-203b9cd8bcf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource">
+      <UniqueIdentifier>{197e2715-dfa6-4c6a-bf52-cd57441db0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. GameObject">
+      <UniqueIdentifier>{3b038ab7-14c0-403f-899c-f88f6c0d9ee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component">
+      <UniqueIdentifier>{0de9ea74-8cdf-485c-a40f-751e28977cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\02. Core">
+      <UniqueIdentifier>{42e1f5bb-08b5-4204-bcde-ca3cfe5e9a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\08. Scene">
+      <UniqueIdentifier>{4df0742f-ef14-4d60-900f-0412c4fce32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\CopyTexture">
+      <UniqueIdentifier>{26e239c6-05eb-4f11-85ed-d994357e569e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\ParticleUpdate">
+      <UniqueIdentifier>{7e4f28ed-ec19-47fd-a60a-532cc4e5ee24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\Terrain">
+      <UniqueIdentifier>{1f3dc728-18a9-4567-82e0-3eb6ed238f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\KeyManager">
+      <UniqueIdentifier>{566f74bb-8b30-47ed-b519-dccd63c8f7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\PathManager">
+      <UniqueIdentifier>{d60360e2-14f0-4897-a73d-9ab12827175a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\TimeManager">
+      <UniqueIdentifier>{a886a2b8-73c1-4786-97d3-b7cf6fb7071a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\RenderManager">
+      <UniqueIdentifier>{72a02287-65fa-4e11-97b0-f174e596fb01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\ResourceManager">
+      <UniqueIdentifier>{a0b43ef8-dc5a-4e29-b30e-6fd9c7b84647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\EventManager">
+      <UniqueIdentifier>{806a6421-fb0d-4092-a73b-42c966301ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\SceneManager">
+      <UniqueIdentifier>{bae12bc9-2cf3-4b74-a3d0-6596512b5c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\CollisionManager">
+      <UniqueIdentifier>{87659b38-db73-4a10-a6c4-e299089af6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Device\ConstBuffer">
+      <UniqueIdentifier>{43a70c05-cb95-46d0-b2e0-cf57e9396861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Device\StructuredBuffer">
+      <UniqueIdentifier>{33f5938f-f92c-4df8-b74f-91814780f473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Material">
+      <UniqueIdentifier>{de956fc2-6658-4516-b940-e8a71a402075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Mesh">
+      <UniqueIdentifier>{08efb826-7f19-4c74-8d7f-784b0ac19d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Prefab">
+      <UniqueIdentifier>{7f6be234-e060-47b3-9454-f317548e841e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Shader">
+      <UniqueIdentifier>{8a2da8ec-7748-487c-abc0-ca5a38138a29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Shader\ComputeShader">
+      <UniqueIdentifier>{cc5924fd-e726-4289-8c2c-fec97c18f7c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Shader\GraphicsShader">
+      <UniqueIdentifier>{ba6ca61d-70f0-48db-b9a9-8246827b2afd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Sound">
+      <UniqueIdentifier>{0bb5b318-a63e-4b64-bde5-4b29b7d780fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\Texture">
+      <UniqueIdentifier>{5757bd8b-a5bb-4644-aa5e-1c83315b2ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\RenderManager\MRT">
+      <UniqueIdentifier>{bae20579-0520-4595-b941-0bf6e5d5790f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource\MeshData">
+      <UniqueIdentifier>{3ce1df26-cb41-4cd7-991f-9858feccd9a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Animator2D">
+      <UniqueIdentifier>{10c22310-fafe-4b74-883f-48dae090a3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Animator3D">
+      <UniqueIdentifier>{95cdb3bf-eb0b-4e56-a85c-f49313b54914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Collider2D">
+      <UniqueIdentifier>{8e8f4950-02f0-4c38-80eb-bc76713579e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Collider3D">
+      <UniqueIdentifier>{c9f13d4e-2e99-4a67-8179-cec37db4eb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Camera">
+      <UniqueIdentifier>{f48f7855-273f-41ed-a0fe-61017910b001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Light2D">
+      <UniqueIdentifier>{ac49ee64-8d6b-4fe2-b004-31a89981bf51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Light3D">
+      <UniqueIdentifier>{b5f4a521-847a-47b8-97c6-bef6a5989fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\MeshRender">
+      <UniqueIdentifier>{d729d135-6f1d-4fac-83d8-9895a3fdd616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\ParticleSystem">
+      <UniqueIdentifier>{a64c06f8-9496-45e1-a60a-71744ba2d740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Script">
+      <UniqueIdentifier>{3eccfa49-fa67-4c34-b58f-f9445cd37879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Terrain">
+      <UniqueIdentifier>{6e9698f5-21a7-4ca6-ac81-1d6ee37d876e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\TileMap">
+      <UniqueIdentifier>{19dff60e-835c-418b-b2af-652705d34917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Transform">
+      <UniqueIdentifier>{7e25f348-90d8-46c2-acb5-551ca43701d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\Terrain\HeightMap">
+      <UniqueIdentifier>{d9418835-8fd9-491f-aac7-04e5f89bf795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\Terrain\Raycast">
+      <UniqueIdentifier>{c63e0008-6962-4f31-9f1e-d75b120418ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\Terrain\WeightMap">
+      <UniqueIdentifier>{39138f00-4823-44a7-a307-1c0c98322c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Camera\Frustum">
+      <UniqueIdentifier>{bd0634a1-f462-49f3-807c-69561b23d7d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\FontManager">
+      <UniqueIdentifier>{799f60e1-bed1-4894-9357-377942f31caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\Animation3D">
+      <UniqueIdentifier>{07d9dbb2-2106-4229-b096-9ee65f4d16e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Device\InstancingBuffer">
+      <UniqueIdentifier>{059faba9-fb83-45d9-a334-728902c3adea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode_Compute\CopyBoneMatrix">
+      <UniqueIdentifier>{af9d915c-e45c-45fc-a755-52738b91612c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\NaviMesh">
+      <UniqueIdentifier>{4ec00ada-8ab9-45a1-9212-983bad7d568e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\NaviMesh\TileNode">
+      <UniqueIdentifier>{934bbd73-8da7-49e3-a24e-7e57d93eb2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Manager\UIManager">
+      <UniqueIdentifier>{0c7b4c5a-f0af-40e3-b44f-c51f45b1a322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. Component\Camera\LightCamera">
+      <UniqueIdentifier>{c879c541-ee78-4a43-a647-3e22abb149c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Origin</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Origin</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extern.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CKeyManager.h">
+      <Filter>Engine\04. Manager\KeyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CPathManager.h">
+      <Filter>Engine\04. Manager\PathManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimeManager.h">
+      <Filter>Engine\04. Manager\TimeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CCore.h">
+      <Filter>Engine\02. Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CEventManager.h">
+      <Filter>Engine\04. Manager\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollisionManager.h">
+      <Filter>Engine\04. Manager\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneManager.h">
+      <Filter>Engine\04. Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CResourceManager.h">
+      <Filter>Engine\04. Manager\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderManager.h">
+      <Filter>Engine\04. Manager\RenderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CDevice.h">
+      <Filter>Engine\03. Device</Filter>
+    </ClInclude>
+    <ClInclude Include="CEntity.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CRes.h">
+      <Filter>Engine\05. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>Engine\05. Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Ptr.h">
+      <Filter>Engine\05. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="CTexture.h">
+      <Filter>Engine\05. Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CConstBuffer.h">
+      <Filter>Engine\03. Device\ConstBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CStructuredBuffer.h">
+      <Filter>Engine\03. Device\StructuredBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CMaterial.h">
+      <Filter>Engine\05. Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CMesh.h">
+      <Filter>Engine\05. Resource\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CPrefab.h">
+      <Filter>Engine\05. Resource\Prefab</Filter>
+    </ClInclude>
+    <ClInclude Include="CShader.h">
+      <Filter>Engine\05. Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="CGraphicsShader.h">
+      <Filter>Engine\05. Resource\Shader\GraphicsShader</Filter>
+    </ClInclude>
+    <ClInclude Include="CComputeShader.h">
+      <Filter>Engine\05. Resource\Shader\ComputeShader</Filter>
+    </ClInclude>
+    <ClInclude Include="CMeshData.h">
+      <Filter>Engine\05. Resource\MeshData</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObject.h">
+      <Filter>Engine\06. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent.h">
+      <Filter>Engine\07. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimator2D.h">
+      <Filter>Engine\07. Component\Animator2D</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimation2D.h">
+      <Filter>Engine\07. Component\Animator2D</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollider2D.h">
+      <Filter>Engine\07. Component\Collider2D</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollider3D.h">
+      <Filter>Engine\07. Component\Collider3D</Filter>
+    </ClInclude>
+    <ClInclude Include="CCamera.h">
+      <Filter>Engine\07. Component\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CLight2D.h">
+      <Filter>Engine\07. Component\Light2D</Filter>
+    </ClInclude>
+    <ClInclude Include="CLight3D.h">
+      <Filter>Engine\07. Component\Light3D</Filter>
+    </ClInclude>
+    <ClInclude Include="CMeshRender.h">
+      <Filter>Engine\07. Component\MeshRender</Filter>
+    </ClInclude>
+    <ClInclude Include="CTileMap.h">
+      <Filter>Engine\07. Component\TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="CTerrain.h">
+      <Filter>Engine\07. Component\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="CScript.h">
+      <Filter>Engine\07. Component\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CParticleSystem.h">
+      <Filter>Engine\07. Component\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CLayer.h">
+      <Filter>Engine\08. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Engine\08. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CMRT.h">
+      <Filter>Engine\04. Manager\RenderManager\MRT</Filter>
+    </ClInclude>
+    <ClInclude Include="CFBXLoader.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="CCopyTextureShader.h">
+      <Filter>ShaderCode_Compute\CopyTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="CParticleUpdateShader.h">
+      <Filter>ShaderCode_Compute\ParticleUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="CHeightMapShader.h">
+      <Filter>ShaderCode_Compute\Terrain\HeightMap</Filter>
+    </ClInclude>
+    <ClInclude Include="CWeightMapShader.h">
+      <Filter>ShaderCode_Compute\Terrain\WeightMap</Filter>
+    </ClInclude>
+    <ClInclude Include="CRaycastShader.h">
+      <Filter>ShaderCode_Compute\Terrain\Raycast</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrustum.h">
+      <Filter>Engine\07. Component\Camera\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="CFontManager.h">
+      <Filter>Engine\04. Manager\FontManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimator3D.h">
+      <Filter>Engine\07. Component\Animator3D</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimation3DShader.h">
+      <Filter>ShaderCode_Compute\Animation3D</Filter>
+    </ClInclude>
+    <ClInclude Include="CInstancingBuffer.h">
+      <Filter>Engine\03. Device\InstancingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CCopyBoneMatrixShader.h">
+      <Filter>ShaderCode_Compute\CopyBoneMatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="CNaviMesh.h">
+      <Filter>Engine\07. Component\NaviMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CNaviTileNode.h">
+      <Filter>Engine\07. Component\NaviMesh\TileNode</Filter>
+    </ClInclude>
+    <ClInclude Include="CUIManager.h">
+      <Filter>Engine\04. Manager\UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLightCamera.h">
+      <Filter>Engine\07. Component\Camera\LightCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="CTransform.h">
+      <Filter>Engine\07. Component\Transform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Origin</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Origin</Filter>
+    </ClCompile>
+    <ClCompile Include="extern.cpp">
+      <Filter>Engine\01. Header</Filter>
+    </ClCompile>
+    <ClCompile Include="func.cpp">
+      <Filter>Engine\01. Header</Filter>
+    </ClCompile>
+    <ClCompile Include="CKeyManager.cpp">
+      <Filter>Engine\04. Manager\KeyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CPathManager.cpp">
+      <Filter>Engine\04. Manager\PathManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimeManager.cpp">
+      <Filter>Engine\04. Manager\TimeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CCore.cpp">
+      <Filter>Engine\02. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CEventManager.cpp">
+      <Filter>Engine\04. Manager\EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollisionManager.cpp">
+      <Filter>Engine\04. Manager\CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>Engine\04. Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CResourceManager.cpp">
+      <Filter>Engine\04. Manager\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderManager.cpp">
+      <Filter>Engine\04. Manager\RenderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CDevice.cpp">
+      <Filter>Engine\03. Device</Filter>
+    </ClCompile>
+    <ClCompile Include="CEntity.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CRes.cpp">
+      <Filter>Engine\05. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>Engine\05. Resource\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="CTexture.cpp">
+      <Filter>Engine\05. Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CConstBuffer.cpp">
+      <Filter>Engine\03. Device\ConstBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="CStructuredBuffer.cpp">
+      <Filter>Engine\03. Device\StructuredBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="CMaterial.cpp">
+      <Filter>Engine\05. Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CMesh.cpp">
+      <Filter>Engine\05. Resource\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CPrefab.cpp">
+      <Filter>Engine\05. Resource\Prefab</Filter>
+    </ClCompile>
+    <ClCompile Include="CShader.cpp">
+      <Filter>Engine\05. Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="CGraphicsShader.cpp">
+      <Filter>Engine\05. Resource\Shader\GraphicsShader</Filter>
+    </ClCompile>
+    <ClCompile Include="CComputeShader.cpp">
+      <Filter>Engine\05. Resource\Shader\ComputeShader</Filter>
+    </ClCompile>
+    <ClCompile Include="CMeshData.cpp">
+      <Filter>Engine\05. Resource\MeshData</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObject.cpp">
+      <Filter>Engine\06. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent.cpp">
+      <Filter>Engine\07. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimator2D.cpp">
+      <Filter>Engine\07. Component\Animator2D</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimation2D.cpp">
+      <Filter>Engine\07. Component\Animator2D</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollider2D.cpp">
+      <Filter>Engine\07. Component\Collider2D</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollider3D.cpp">
+      <Filter>Engine\07. Component\Collider3D</Filter>
+    </ClCompile>
+    <ClCompile Include="CCamera.cpp">
+      <Filter>Engine\07. Component\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CLight2D.cpp">
+      <Filter>Engine\07. Component\Light2D</Filter>
+    </ClCompile>
+    <ClCompile Include="CLight3D.cpp">
+      <Filter>Engine\07. Component\Light3D</Filter>
+    </ClCompile>
+    <ClCompile Include="CMeshRender.cpp">
+      <Filter>Engine\07. Component\MeshRender</Filter>
+    </ClCompile>
+    <ClCompile Include="CTransform.cpp">
+      <Filter>Engine\07. Component\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="CTileMap.cpp">
+      <Filter>Engine\07. Component\TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="CTerrain.cpp">
+      <Filter>Engine\07. Component\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CScript.cpp">
+      <Filter>Engine\07. Component\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CParticleSystem.cpp">
+      <Filter>Engine\07. Component\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CLayer.cpp">
+      <Filter>Engine\08. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Engine\08. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CMRT.cpp">
+      <Filter>Engine\04. Manager\RenderManager\MRT</Filter>
+    </ClCompile>
+    <ClCompile Include="CFBXLoader.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="CCopyTextureShader.cpp">
+      <Filter>ShaderCode_Compute\CopyTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="CParticleUpdateShader.cpp">
+      <Filter>ShaderCode_Compute\ParticleUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="CHeightMapShader.cpp">
+      <Filter>ShaderCode_Compute\Terrain\HeightMap</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeightMapShader.cpp">
+      <Filter>ShaderCode_Compute\Terrain\WeightMap</Filter>
+    </ClCompile>
+    <ClCompile Include="CRaycastShader.cpp">
+      <Filter>ShaderCode_Compute\Terrain\Raycast</Filter>
+    </ClCompile>
+    <ClCompile Include="CFrustum.cpp">
+      <Filter>Engine\07. Component\Camera\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="CFontManager.cpp">
+      <Filter>Engine\04. Manager\FontManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimator3D.cpp">
+      <Filter>Engine\07. Component\Animator3D</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimation3DShader.cpp">
+      <Filter>ShaderCode_Compute\Animation3D</Filter>
+    </ClCompile>
+    <ClCompile Include="CInstancingBuffer.cpp">
+      <Filter>Engine\03. Device\InstancingBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="CCopyBoneMatrixShader.cpp">
+      <Filter>ShaderCode_Compute\CopyBoneMatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="CNaviMesh.cpp">
+      <Filter>Engine\07. Component\NaviMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CNaviTileNode.cpp">
+      <Filter>Engine\07. Component\NaviMesh\TileNode</Filter>
+    </ClCompile>
+    <ClCompile Include="CUIManager.cpp">
+      <Filter>Engine\04. Manager\UIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLightCamera.cpp">
+      <Filter>Engine\07. Component\Camera\LightCamera</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>Support</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="heightmap.fx">
+      <Filter>ShaderCode_Compute\Terrain\HeightMap</Filter>
+    </FxCompile>
+    <FxCompile Include="raycast.fx">
+      <Filter>ShaderCode_Compute\Terrain\Raycast</Filter>
+    </FxCompile>
+    <FxCompile Include="weightmap.fx">
+      <Filter>ShaderCode_Compute\Terrain\WeightMap</Filter>
+    </FxCompile>
+    <FxCompile Include="particle_update.fx">
+      <Filter>ShaderCode_Compute\ParticleUpdate</Filter>
+    </FxCompile>
+    <FxCompile Include="copytexture.fx">
+      <Filter>ShaderCode_Compute\CopyTexture</Filter>
+    </FxCompile>
+    <FxCompile Include="frustum.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="func.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="light.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="particle.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="posteffect.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="std2d.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="std3d.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="std3d_deferred.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="struct.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="terrain.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="tool.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="value.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="animation3D.fx">
+      <Filter>ShaderCode_Compute\Animation3D</Filter>
+    </FxCompile>
+    <FxCompile Include="bonecopy.fx">
+      <Filter>ShaderCode_Compute\CopyBoneMatrix</Filter>
+    </FxCompile>
+    <FxCompile Include="bar.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="shadow_depth.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="Effect.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="number.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
