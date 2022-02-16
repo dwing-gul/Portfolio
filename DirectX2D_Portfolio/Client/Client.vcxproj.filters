@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{16fb7b85-1851-4343-afde-a5819738e492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{b3609c29-1012-44bb-8043-46eb689f92b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{afdf1e48-2ed1-46fe-ba3c-ece074173412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{3d7af24f-e37f-449c-be8f-7e1ab7970bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ImGuiManager">
+      <UniqueIdentifier>{88c8e677-b14e-4ce3-aa6a-54368a56bcf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SaveLoad">
+      <UniqueIdentifier>{3a139557-1e70-4189-bb12-c8217c2a235d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene">
+      <UniqueIdentifier>{b0c8d727-7cd4-4544-b77d-eade8a4ffb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ToolObjectManager">
+      <UniqueIdentifier>{60221df2-284a-4234-8b34-a8f1e3056005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\HierarchyGUI">
+      <UniqueIdentifier>{c5e90211-c220-4832-880e-bfdeab9635c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI">
+      <UniqueIdentifier>{ee597804-9c4c-417b-a19c-aaca6d56500f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\MenuGUI">
+      <UniqueIdentifier>{a821842e-0e6c-466d-97f7-d12baeb494d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Module">
+      <UniqueIdentifier>{8dd6a9d8-ac91-4e39-99e1-e4051f37cc20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\ResourceManagerGUI">
+      <UniqueIdentifier>{6c06dbf2-f99b-4cba-8a5c-e08bdfee78e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ToolObjectManager\CameraEX">
+      <UniqueIdentifier>{ff5cfeb9-30b3-4bfc-8570-1bee5a73f4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ToolObjectManager\GameObjectEX">
+      <UniqueIdentifier>{974d9c9a-3eda-4a46-87fe-d0d953bf6664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\ToolObjectManager\ToolCamScript">
+      <UniqueIdentifier>{47ac021e-15d8-4f1b-943a-c2e1cd2054e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI">
+      <UniqueIdentifier>{26fbd551-29f1-402b-a9aa-0fbcaa6b588c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI">
+      <UniqueIdentifier>{d00509f0-e98e-4e34-ac4f-2b9841c79dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI">
+      <UniqueIdentifier>{cadfeeae-0387-495f-b3ff-4ff06e8115d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Module\ListGUI">
+      <UniqueIdentifier>{4b89a348-035f-4ee4-82b1-5f9ca15db70e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Module\TreeGUI">
+      <UniqueIdentifier>{b4059b1f-d326-4a89-b03f-e452d0d2487e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Module\ParamGUI">
+      <UniqueIdentifier>{c00f6a24-bb64-467b-879b-66392a563c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\CameraGUI">
+      <UniqueIdentifier>{38d3a817-cd55-4e9f-9d1e-965bb4b17beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Light2DGUI">
+      <UniqueIdentifier>{02cc5a6d-37a8-46d1-b344-dd0d2bc9a715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Collider2DGUI">
+      <UniqueIdentifier>{ade85b06-712e-45ad-9fc7-9a7916c5c887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\MeshRenderGUI">
+      <UniqueIdentifier>{fdf0a2e7-6b64-4c39-8879-1d5c175101ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ParticleGUI">
+      <UniqueIdentifier>{4ad24bb0-7f01-4bb6-8c1b-075cb56cb42f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\TileMapGUI">
+      <UniqueIdentifier>{9f471614-4b45-414d-9198-383af0d3b046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\TransformGUI">
+      <UniqueIdentifier>{3117774e-0d25-4ab4-ba4e-0b8a2ca2d768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\MaterialGUI">
+      <UniqueIdentifier>{3c58ccb1-95b0-4f7e-b6bf-2a0c82817304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\MeshGUI">
+      <UniqueIdentifier>{7f669163-46c4-4b78-a30f-ab4199c7cba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI">
+      <UniqueIdentifier>{dcdb7958-afec-4f2d-aef3-79e7f3238ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\PrefabGUI">
+      <UniqueIdentifier>{cf99aa5c-cd80-4ae7-b71f-8f415333c923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\TextureGUI">
+      <UniqueIdentifier>{c1f53976-7d7c-40ba-814b-df2d3e00efb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI\GraphicsShaderGUI">
+      <UniqueIdentifier>{c7587054-8cce-493a-9594-94453b348c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI\ComputeShaderGUI">
+      <UniqueIdentifier>{a21e9d1c-bba2-47f6-a894-43dd06ab2cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SceneConverter">
+      <UniqueIdentifier>{9519de77-4fed-4ac9-883e-0786a9cb9458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\ToolScene">
+      <UniqueIdentifier>{8052306c-0df3-4a96-a22f-96143944ea6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Animator2DGUI">
+      <UniqueIdentifier>{d0a9d9d8-ad07-4138-a799-e1f5ab9f5bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PartyManager">
+      <UniqueIdentifier>{5389edc9-c8ed-45fc-88a4-3a94abd8479a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI">
+      <UniqueIdentifier>{099f6f42-7245-404b-aa76-8855acd56ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\DoorScript">
+      <UniqueIdentifier>{9d5200cf-0335-4c28-999c-a7a85fd41206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\WallScript">
+      <UniqueIdentifier>{d0bda1c4-b748-4511-a353-158a5b6a2ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\TextUIScript">
+      <UniqueIdentifier>{2329bef7-9423-4b40-b82c-dac7bf70f55f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\TextUIManager">
+      <UniqueIdentifier>{91d93a2b-59f8-4c63-acb6-d30ebbec5b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SceneConverter\SceneConvertScript">
+      <UniqueIdentifier>{c67e27bb-1477-4e90-ab9a-1cea1867984b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\TownScene">
+      <UniqueIdentifier>{f7361511-c293-4878-9796-69d1e33ae399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\DungeonScene">
+      <UniqueIdentifier>{71c23ceb-6a78-4d35-889c-8df1bef4e0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PartyManager\PlayerWaitingScript">
+      <UniqueIdentifier>{67edc47b-7d4e-4ad7-9b80-5fe90dc97935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiManager.h">
+      <Filter>Game\ImGuiManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSaveLoad.h">
+      <Filter>Game\SaveLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolObjectManager.h">
+      <Filter>Game\ToolObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraEX.h">
+      <Filter>Game\ToolObjectManager\CameraEX</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectEX.h">
+      <Filter>Game\ToolObjectManager\GameObjectEX</Filter>
+    </ClInclude>
+    <ClInclude Include="HierarchyGUI.h">
+      <Filter>GUI\HierarchyGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectorInfoGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuGUI.h">
+      <Filter>GUI\MenuGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeGUI.h">
+      <Filter>GUI\Module\TreeGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamGUI.h">
+      <Filter>GUI\Module\ParamGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ListGUI.h">
+      <Filter>GUI\Module\ListGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManagerGUI.h">
+      <Filter>GUI\ResourceManagerGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\CameraGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2DGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Collider2DGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Light2DGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Light2DGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRenderGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\MeshRenderGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\TransformGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMapGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\TileMapGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ParticleGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeShaderGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI\ComputeShaderGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsShaderGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI\GraphicsShaderGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PrefabGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\PrefabGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\TextureGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\MeshGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\MaterialGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCamScript.h">
+      <Filter>Game\ToolObjectManager\ToolCamScript</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneConverter.h">
+      <Filter>Game\SceneConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneConfig.h">
+      <Filter>Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolScene.h">
+      <Filter>Game\Scene\ToolScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator2DGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Animator2DGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PartyManager.h">
+      <Filter>Game\PartyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectorGUI.h">
+      <Filter>GUI\InspectorGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorScriptGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\DoorScript</Filter>
+    </ClInclude>
+    <ClInclude Include="WallScriptGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\WallScript</Filter>
+    </ClInclude>
+    <ClInclude Include="TextUIScriptGUI.h">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\TextUIScript</Filter>
+    </ClInclude>
+    <ClInclude Include="TextUIManager.h">
+      <Filter>Game\TextUIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneConvertScript.h">
+      <Filter>Game\SceneConverter\SceneConvertScript</Filter>
+    </ClInclude>
+    <ClInclude Include="TownScene.h">
+      <Filter>Game\Scene\TownScene</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonScene.h">
+      <Filter>Game\Scene\DungeonScene</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerWaitingScript.h">
+      <Filter>Game\PartyManager\PlayerWaitingScript</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Client.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiManager.cpp">
+      <Filter>Game\ImGuiManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSaveLoad.cpp">
+      <Filter>Game\SaveLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolObjectManager.cpp">
+      <Filter>Game\ToolObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraEX.cpp">
+      <Filter>Game\ToolObjectManager\CameraEX</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectEX.cpp">
+      <Filter>Game\ToolObjectManager\GameObjectEX</Filter>
+    </ClCompile>
+    <ClCompile Include="HierarchyGUI.cpp">
+      <Filter>GUI\HierarchyGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectorInfoGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuGUI.cpp">
+      <Filter>GUI\MenuGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeGUI.cpp">
+      <Filter>GUI\Module\TreeGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamGUI.cpp">
+      <Filter>GUI\Module\ParamGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ListGUI.cpp">
+      <Filter>GUI\Module\ListGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManagerGUI.cpp">
+      <Filter>GUI\ResourceManagerGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\CameraGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider2DGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Collider2DGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Light2DGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Light2DGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRenderGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\MeshRenderGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\TransformGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMapGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\TileMapGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ParticleGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeShaderGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI\ComputeShaderGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsShaderGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\ShaderGUI\GraphicsShaderGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PrefabGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\PrefabGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\TextureGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\MeshGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ResourceGUI\MaterialGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCamScript.cpp">
+      <Filter>Game\ToolObjectManager\ToolCamScript</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneConverter.cpp">
+      <Filter>Game\SceneConverter</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneConfig.cpp">
+      <Filter>Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolScene.cpp">
+      <Filter>Game\Scene\ToolScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator2DGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\Animator2DGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PartyManager.cpp">
+      <Filter>Game\PartyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectorGUI.cpp">
+      <Filter>GUI\InspectorGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorScriptGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\DoorScript</Filter>
+    </ClCompile>
+    <ClCompile Include="WallScriptGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\WallScript</Filter>
+    </ClCompile>
+    <ClCompile Include="TextUIScriptGUI.cpp">
+      <Filter>GUI\InspectorGUI\InspectorInfoGUI\ComponentGUI\ScriptsGUI\TextUIScript</Filter>
+    </ClCompile>
+    <ClCompile Include="TextUIManager.cpp">
+      <Filter>Game\TextUIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneConvertScript.cpp">
+      <Filter>Game\SceneConverter\SceneConvertScript</Filter>
+    </ClCompile>
+    <ClCompile Include="TownScene.cpp">
+      <Filter>Game\Scene\TownScene</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonScene.cpp">
+      <Filter>Game\Scene\DungeonScene</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerWaitingScript.cpp">
+      <Filter>Game\PartyManager\PlayerWaitingScript</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

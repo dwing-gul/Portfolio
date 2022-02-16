@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default">
+      <UniqueIdentifier>{d485862f-41ab-4ed2-9048-f6a39ac10304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode">
+      <UniqueIdentifier>{ea560df4-0aa9-4f4c-98d6-e4c377c7f6ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\PlayerScript">
+      <UniqueIdentifier>{801ef341-c328-44b8-ae9f-24a824c349cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript">
+      <UniqueIdentifier>{3e1ff15a-0f42-406a-9a70-b51c666e1585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptManager">
+      <UniqueIdentifier>{6bfbccec-e150-47a9-b081-60ada8a1f4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\PlayerScript\Crusader">
+      <UniqueIdentifier>{2f61fd3a-05a1-41a1-bc28-33c4af625aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\PlayerScript\Highwayman">
+      <UniqueIdentifier>{990e56d4-1716-49d4-8af7-2f411d49c8b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\PlayerScript\Vestal">
+      <UniqueIdentifier>{cc2b13c2-19c3-4af9-83df-f25a6d433eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\PlayerScript\PlagueDoctor">
+      <UniqueIdentifier>{f1b245c4-0285-4386-a3f1-c704790ff1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript">
+      <UniqueIdentifier>{be4de0e5-6613-487e-af90-31c049dea7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\BattlePhase">
+      <UniqueIdentifier>{6adf5361-5748-48b4-8c1f-ce96e466a497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\SkillButton">
+      <UniqueIdentifier>{8ed2fe41-9f6f-4e9d-b05b-0525a43b7280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\CultistBrawler">
+      <UniqueIdentifier>{276eca75-483f-4e13-9150-228e5287b7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\CultistWitch">
+      <UniqueIdentifier>{d2b4610f-cd12-40c7-966d-c0e8d19e9872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\Madman">
+      <UniqueIdentifier>{d6ec1736-caab-46fb-947e-7cc948c2bf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\SkeletonArbalist">
+      <UniqueIdentifier>{76d5d094-17df-41ad-9d6c-08b7c8e1055b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\SkeletonCommon">
+      <UniqueIdentifier>{5e82f58c-7716-4e09-817b-014fb78bcf91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\SkeletonCourtier">
+      <UniqueIdentifier>{aa3cbb81-f6d1-4fef-8fe3-fe328b568776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\SkeletonDefender">
+      <UniqueIdentifier>{82746deb-1a1c-4a02-86ff-971d312ffedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\CameraScript">
+      <UniqueIdentifier>{f7cb37d0-772b-46f5-89b2-cd27cf57a86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\Door">
+      <UniqueIdentifier>{796c0377-511b-4400-857d-0a05f48b7f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\LightScript">
+      <UniqueIdentifier>{f1cf2916-f791-4f2d-a3a4-dad8d8572d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\UIScript">
+      <UniqueIdentifier>{06b84c3c-30e4-464f-bdb1-bc43733ca183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\Wall">
+      <UniqueIdentifier>{ae6745b4-83f6-49ce-9579-7094fcf05f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\TownObject">
+      <UniqueIdentifier>{8d0a96b2-edc7-48f8-bac6-7143e7c79467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\PartyIcon">
+      <UniqueIdentifier>{80597c09-d205-47e1-a235-3b6f85c715be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\SlotScript">
+      <UniqueIdentifier>{faa5edbc-0468-4a2f-8fe6-1e278c204adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\Effect">
+      <UniqueIdentifier>{c3661af1-d64d-40bc-a0d5-0fc30840e849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\ItemScript">
+      <UniqueIdentifier>{2dc62c34-aa4e-4024-b1ce-71960e8d3501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\InteractionScript\ItemManagerScript">
+      <UniqueIdentifier>{aa57d8d3-6de1-45d2-b6ae-9dd03903cdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\Pew_Small">
+      <UniqueIdentifier>{fba82570-4550-4b73-8735-a4fc154fa439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\Pew_Medium">
+      <UniqueIdentifier>{b1064009-a491-4823-abb2-730dc7e63cb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode\MonsterScript\Pew_Large">
+      <UniqueIdentifier>{fd60a1e2-b9fe-4bed-86fe-025b0b12e940}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerScript.h">
+      <Filter>ScriptCode\PlayerScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptManager.h">
+      <Filter>ScriptManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterScript.h">
+      <Filter>ScriptCode\MonsterScript</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderScript.h">
+      <Filter>ScriptCode\PlayerScript\Crusader</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwaymanScript.h">
+      <Filter>ScriptCode\PlayerScript\Highwayman</Filter>
+    </ClInclude>
+    <ClInclude Include="VestalScript.h">
+      <Filter>ScriptCode\PlayerScript\Vestal</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctorScript.h">
+      <Filter>ScriptCode\PlayerScript\PlagueDoctor</Filter>
+    </ClInclude>
+    <ClInclude Include="BattlePhaseScript.h">
+      <Filter>ScriptCode\InteractionScript\BattlePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillButtonScript.h">
+      <Filter>ScriptCode\InteractionScript\SkillButton</Filter>
+    </ClInclude>
+    <ClInclude Include="CultistBrawlerScript.h">
+      <Filter>ScriptCode\MonsterScript\CultistBrawler</Filter>
+    </ClInclude>
+    <ClInclude Include="CultistWitchScript.h">
+      <Filter>ScriptCode\MonsterScript\CultistWitch</Filter>
+    </ClInclude>
+    <ClInclude Include="MadmanScript.h">
+      <Filter>ScriptCode\MonsterScript\Madman</Filter>
+    </ClInclude>
+    <ClInclude Include="SkeletonCommonScript.h">
+      <Filter>ScriptCode\MonsterScript\SkeletonCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="SkeletonArbalistScript.h">
+      <Filter>ScriptCode\MonsterScript\SkeletonArbalist</Filter>
+    </ClInclude>
+    <ClInclude Include="SkeletonCourtierScript.h">
+      <Filter>ScriptCode\MonsterScript\SkeletonCourtier</Filter>
+    </ClInclude>
+    <ClInclude Include="SkeletonDefenderScript.h">
+      <Filter>ScriptCode\MonsterScript\SkeletonDefender</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraScript.h">
+      <Filter>ScriptCode\CameraScript</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorScript.h">
+      <Filter>ScriptCode\InteractionScript\Door</Filter>
+    </ClInclude>
+    <ClInclude Include="LightScript.h">
+      <Filter>ScriptCode\LightScript</Filter>
+    </ClInclude>
+    <ClInclude Include="UIScript.h">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClInclude>
+    <ClInclude Include="HPBarScript.h">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClInclude>
+    <ClInclude Include="LightBarScript.h">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClInclude>
+    <ClInclude Include="TextUIScript.h">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClInclude>
+    <ClInclude Include="WallScript.h">
+      <Filter>ScriptCode\InteractionScript\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="TownObjectScript.h">
+      <Filter>ScriptCode\InteractionScript\TownObject</Filter>
+    </ClInclude>
+    <ClInclude Include="PartyIconScript.h">
+      <Filter>ScriptCode\InteractionScript\PartyIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="SlotScript.h">
+      <Filter>ScriptCode\InteractionScript\SlotScript</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectScript.h">
+      <Filter>ScriptCode\InteractionScript\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemScript.h">
+      <Filter>ScriptCode\InteractionScript\ItemScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManagerScript.h">
+      <Filter>ScriptCode\InteractionScript\ItemManagerScript</Filter>
+    </ClInclude>
+    <ClInclude Include="PewLargeScript.h">
+      <Filter>ScriptCode\MonsterScript\Pew_Large</Filter>
+    </ClInclude>
+    <ClInclude Include="PewMediumScript.h">
+      <Filter>ScriptCode\MonsterScript\Pew_Medium</Filter>
+    </ClInclude>
+    <ClInclude Include="PewSmallScript.h">
+      <Filter>ScriptCode\MonsterScript\Pew_Small</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreItemScript.h">
+      <Filter>ScriptCode\InteractionScript\ItemScript</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerScript.cpp">
+      <Filter>ScriptCode\PlayerScript</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptManager.cpp">
+      <Filter>ScriptManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterScript.cpp">
+      <Filter>ScriptCode\MonsterScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderScript.cpp">
+      <Filter>ScriptCode\PlayerScript\Crusader</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwaymanScript.cpp">
+      <Filter>ScriptCode\PlayerScript\Highwayman</Filter>
+    </ClCompile>
+    <ClCompile Include="VestalScript.cpp">
+      <Filter>ScriptCode\PlayerScript\Vestal</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctorScript.cpp">
+      <Filter>ScriptCode\PlayerScript\PlagueDoctor</Filter>
+    </ClCompile>
+    <ClCompile Include="BattlePhaseScript.cpp">
+      <Filter>ScriptCode\InteractionScript\BattlePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillButtonScript.cpp">
+      <Filter>ScriptCode\InteractionScript\SkillButton</Filter>
+    </ClCompile>
+    <ClCompile Include="CultistBrawlerScript.cpp">
+      <Filter>ScriptCode\MonsterScript\CultistBrawler</Filter>
+    </ClCompile>
+    <ClCompile Include="CultistWitchScript.cpp">
+      <Filter>ScriptCode\MonsterScript\CultistWitch</Filter>
+    </ClCompile>
+    <ClCompile Include="MadmanScript.cpp">
+      <Filter>ScriptCode\MonsterScript\Madman</Filter>
+    </ClCompile>
+    <ClCompile Include="SkeletonCommonScript.cpp">
+      <Filter>ScriptCode\MonsterScript\SkeletonCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="SkeletonArbalistScript.cpp">
+      <Filter>ScriptCode\MonsterScript\SkeletonArbalist</Filter>
+    </ClCompile>
+    <ClCompile Include="SkeletonCourtierScript.cpp">
+      <Filter>ScriptCode\MonsterScript\SkeletonCourtier</Filter>
+    </ClCompile>
+    <ClCompile Include="SkeletonDefenderScript.cpp">
+      <Filter>ScriptCode\MonsterScript\SkeletonDefender</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraScript.cpp">
+      <Filter>ScriptCode\CameraScript</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorScript.cpp">
+      <Filter>ScriptCode\InteractionScript\Door</Filter>
+    </ClCompile>
+    <ClCompile Include="LightScript.cpp">
+      <Filter>ScriptCode\LightScript</Filter>
+    </ClCompile>
+    <ClCompile Include="UIScript.cpp">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClCompile>
+    <ClCompile Include="HPBarScript.cpp">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClCompile>
+    <ClCompile Include="LightBarScript.cpp">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClCompile>
+    <ClCompile Include="TextUIScript.cpp">
+      <Filter>ScriptCode\UIScript</Filter>
+    </ClCompile>
+    <ClCompile Include="WallScript.cpp">
+      <Filter>ScriptCode\InteractionScript\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="TownObjectScript.cpp">
+      <Filter>ScriptCode\InteractionScript\TownObject</Filter>
+    </ClCompile>
+    <ClCompile Include="PartyIconScript.cpp">
+      <Filter>ScriptCode\InteractionScript\PartyIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="SlotScript.cpp">
+      <Filter>ScriptCode\InteractionScript\SlotScript</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectScript.cpp">
+      <Filter>ScriptCode\InteractionScript\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemScript.cpp">
+      <Filter>ScriptCode\InteractionScript\ItemScript</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManagerScript.cpp">
+      <Filter>ScriptCode\InteractionScript\ItemManagerScript</Filter>
+    </ClCompile>
+    <ClCompile Include="PewLargeScript.cpp">
+      <Filter>ScriptCode\MonsterScript\Pew_Large</Filter>
+    </ClCompile>
+    <ClCompile Include="PewMediumScript.cpp">
+      <Filter>ScriptCode\MonsterScript\Pew_Medium</Filter>
+    </ClCompile>
+    <ClCompile Include="PewSmallScript.cpp">
+      <Filter>ScriptCode\MonsterScript\Pew_Small</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreItemScript.cpp">
+      <Filter>ScriptCode\InteractionScript\ItemScript</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
