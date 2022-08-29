@@ -186,8 +186,12 @@ void PartyManager::update()
 			enter->SetVolume(0.5f, channel);
 		}
 
-		// ¹®À¸·Î µé¾î°¡´Â ¿¬ÃâÀ» ÇØÁà¾ßµÊ
-		EnterTheDoor();
+		// ë¬¸ìœ¼ë¡œ ë“¤ì–´ê°€ëŠ” ì—°ì¶œì„ í•´ì¤˜ì•¼ë¨
+		((DoorScript*)m_targetDoor->GetScripts()[0])->EnterTheDoor(m_vectorPlayerParty);
+
+		m_bEnter = ((DoorScript*)m_targetDoor->GetScripts()[0])->IsEnter();
+		m_bNext = ((DoorScript*)m_targetDoor->GetScripts()[0])->IsNext();
+		m_bDoorSound = ((DoorScript*)m_targetDoor->GetScripts()[0])->IsSound();
 	}
 
 	if (m_bBattle)
@@ -330,7 +334,7 @@ void PartyManager::update()
 			CalOrder();
 		}
 
-		BattlePhaseManagement();// ¹èÆ²ÆäÀÌÁî Á¾·á½Ã ¸ó½ºÅÍ ÆÄÆ¼ ÃÊ±âÈ­
+		BattlePhaseManagement();// ë°°í‹€íŽ˜ì´ì¦ˆ ì¢…ë£Œì‹œ ëª¬ìŠ¤í„° íŒŒí‹° ì´ˆê¸°í™”
 	}
 
 	StopSoundAll();
@@ -637,7 +641,7 @@ void PartyManager::BattlePhaseManagement()
 				((PlayerScript*)vectorScript[0])->SetSelect(true);
 			}
 
-			if (((PlayerScript*)vectorScript[0])->IsTurnEnd()) // ÇØ´ç ÅÏ¿¡¼­ ¸ðµç Ä³¸¯ÅÍÀÇ Çàµ¿ÀÌ Á¾·á µÇ¾úÀ» ¶§
+			if (((PlayerScript*)vectorScript[0])->IsTurnEnd()) // í•´ë‹¹ í„´ì—ì„œ ëª¨ë“  ìºë¦­í„°ì˜ í–‰ë™ì´ ì¢…ë£Œ ë˜ì—ˆì„ ë•Œ
 			{
 				++m_startCheck;
 				((PlayerScript*)vectorScript[0])->SetTurnStart(false);
@@ -689,7 +693,7 @@ void PartyManager::BattlePhaseManagement()
 				((MonsterScript*)vectorScript[0])->SelectTarget(m_vectorPlayerParty);
 			}
 
-			if (((MonsterScript*)vectorScript[0])->IsTurnEnd()) // ÇØ´ç ÅÏ¿¡¼­ ¸ðµç Ä³¸¯ÅÍÀÇ Çàµ¿ÀÌ Á¾·á µÇ¾úÀ» ¶§
+			if (((MonsterScript*)vectorScript[0])->IsTurnEnd()) // í•´ë‹¹ í„´ì—ì„œ ëª¨ë“  ìºë¦­í„°ì˜ í–‰ë™ì´ ì¢…ë£Œ ë˜ì—ˆì„ ë•Œ
 			{
 				++m_startCheck;
 				((MonsterScript*)vectorScript[0])->SetTurnStart(false);
@@ -880,169 +884,6 @@ void PartyManager::ExploreSound()
 					}
 				}
 			}
-		}
-	}
-}
-
-void PartyManager::EnterTheDoor()
-{
-	int count = 0;
-	int channel = 0;
-	GameObject* camera = SceneManager::GetInst()->FindObjByName(L"Camera");
-
-	Ptr<Sound> exit = ResourceManager::GetInst()->Load<Sound>(L"Sound_Door_Close", L"sound\\dungeon\\gen_map_door_close.wav");
-
-	if (((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::ENTERANCE ||
-		((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::EXIT)
-	{
-		for (size_t i = 0; i < m_vectorPlayerParty.size(); ++i)
-		{
-			if (nullptr == m_vectorPlayerParty[i])
-				continue;
-
-			Vector3 pos = m_vectorPlayerParty[i]->GetTransform()->GetLocalPos();
-			pos.x += (m_targetDoor->GetTransform()->GetLocalPos().x - pos.x) * 0.6f * DELTATIME;
-			pos.y += (m_targetDoor->GetTransform()->GetLocalPos().y - pos.y) * 0.6f * DELTATIME;
-
-			if (((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::ENTERANCE)
-			{
-				if (3 != i)
-				{
-					if (nullptr != m_vectorPlayerParty[i + 1])
-						pos.z = m_vectorPlayerParty[i + 1]->GetTransform()->GetLocalPos().z + 10.f;
-				}
-			}
-			else if (((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::EXIT)
-			{
-				if (3 != i)
-				{
-					if (nullptr != m_vectorPlayerParty[i + 1])
-						pos.z = m_vectorPlayerParty[i + 1]->GetTransform()->GetLocalPos().z - 10.f;
-				}
-			}
-
-			if (m_vectorPlayerParty[i]->GetAnimator2D()->GetCurAnim()->GetName() != L"Walk")
-			{
-				m_vectorPlayerParty[i]->GetAnimator2D()->Play(L"Walk");
-			}
-
-			m_vectorPlayerParty[i]->GetTransform()->SetLocalPos(pos);
-
-			if (nullptr != m_vectorPlayerParty[i])
-				++count;
-		}
-
-		GameObject* light = SceneManager::GetInst()->FindObjByName(L"Light");
-		((CameraScript*)camera->GetScripts()[0])->SetEnter(true);
-		((CameraScript*)camera->GetScripts()[0])->SetTargetDoor(m_targetDoor);
-
-		float scale = camera->GetCamera()->GetScale();
-		scale -= 0.2f * DELTATIME;
-
-		if (scale > 0.5f)
-			camera->GetCamera()->SetScale(scale);
-
-		int index = count - 1;
-
-		if (0 == count)
-		{
-			index = 0;
-		}
-
-		float range = light->GetLight2D()->GetLightInfo().range;
-		range -= 200.f * DELTATIME;
-
-		if (range > 0.f)
-			light->GetLight2D()->SetRange(range);
-
-		if (range < 0.f)
-		{
-			m_bNext = true;
-			m_bEnter = false;
-			m_bDoorSound = true;
-
-			for (size_t i = 0; i < m_vectorPlayerParty.size(); ++i)
-			{
-				if (nullptr != m_vectorPlayerParty[i])
-					m_vectorPlayerParty[i]->GetAnimator2D()->Play(L"Idle");
-			}
-
-			((CameraScript*)camera->GetScripts()[0])->SetEnter(false);
-			((CameraScript*)camera->GetScripts()[0])->SetTargetDoor(nullptr);
-			camera->GetCamera()->SetScale(1.f);
-			light->GetLight2D()->SetRange(1000.f);
-
-			channel = exit->Play(1);
-			exit->SetVolume(0.5f, channel);
-		}
-	}
-	else if (((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::ROOM_ENTERANCE ||
-		((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::ROOM_EXIT)
-	{
-		float flag = 1.f;
-
-		if (((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::ROOM_ENTERANCE)
-			flag = 1.f;
-		else if (((DoorScript*)m_targetDoor->GetScripts()[0])->GetDoorType() == DOOR_TYPE::ROOM_EXIT)
-			flag = -1.f;
-
-		for (size_t i = 0; i < m_vectorPlayerParty.size(); ++i)
-		{
-			if (nullptr == m_vectorPlayerParty[i])
-				continue;
-
-			Vector3 pos = m_vectorPlayerParty[i]->GetTransform()->GetLocalPos();
-			pos.x += flag * 200.f * DELTATIME;
-
-			if (nullptr == m_vectorPlayerParty[i]->GetAnimator2D()->GetCurAnim() ||
-				m_vectorPlayerParty[i]->GetAnimator2D()->GetCurAnim()->GetName() != L"Walk")
-			{
-				m_vectorPlayerParty[i]->GetAnimator2D()->Play(L"Walk");
-			}
-
-			m_vectorPlayerParty[i]->GetTransform()->SetLocalPos(pos);
-
-			if (nullptr != m_vectorPlayerParty[i])
-				++count;
-		}
-
-		GameObject* light = SceneManager::GetInst()->FindObjByName(L"Light");
-		((CameraScript*)camera->GetScripts()[0])->SetEnter(true);
-		((CameraScript*)camera->GetScripts()[0])->SetTargetDoor(m_targetDoor);
-
-		int index = count - 1;
-
-		if (0 == count)
-		{
-			index = 0;
-		}
-
-		float range = light->GetLight2D()->GetLightInfo().range;
-		range -= 300.f * DELTATIME;
-
-		if (range > 0.f)
-			light->GetLight2D()->SetRange(range);
-
-		if (10.f > range)
-		{
-			m_bNext = true;
-			m_bEnter = false;
-			m_bDoorSound = true;
-
-			for (size_t i = 0; i < m_vectorPlayerParty.size(); ++i)
-			{
-				if (nullptr != m_vectorPlayerParty[i])
-					m_vectorPlayerParty[i]->GetAnimator2D()->Play(L"Idle");
-			}
-
-			((CameraScript*)camera->GetScripts()[0])->SetEnter(false);
-			((CameraScript*)camera->GetScripts()[0])->SetTargetDoor(nullptr);
-			camera->GetCamera()->SetScale(1.f);
-			light->GetLight2D()->SetRange(1000.f);
-
-			
-			channel = exit->Play(1);
-			exit->SetVolume(0.5f, channel);
 		}
 	}
 }

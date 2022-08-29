@@ -19,13 +19,13 @@ private :
 	vector<GameObject*> m_vectorMonsterParty;
 	vector<Prefab*>		m_vectorPlayerWaiting;
 	vector<Prefab*>		m_vectorMonsterWaiting;
-	vector<tOrder>		m_vectorOrder; // ¿ì¼± ¼øÀ§¸¦ °è»êÇÏ±â À§ÇÑ º¤ÅÍ. ½ºÇÇµå¿Í ¿ÀºêÁ§Æ®°¡ µé¾îÀÖÀ½
-	GameObject*			m_targetDoor; // ¾î¶² ¹®À¸·Î µé¾î°¡´ÂÁö
-	bool				m_bEnter; // ¹®À¸·Î µé¾î°¡´ÂÁö
+	vector<tOrder>		m_vectorOrder; // ìš°ì„  ìˆœìœ„ë¥¼ ê³„ì‚°í•˜ê¸° ìœ„í•œ ë²¡í„°. ìŠ¤í”¼ë“œì™€ ì˜¤ë¸Œì íŠ¸ê°€ ë“¤ì–´ìˆìŒ
+	GameObject*			m_targetDoor; // ì–´ë–¤ ë¬¸ìœ¼ë¡œ ë“¤ì–´ê°€ëŠ”ì§€
+	bool				m_bEnter; // ë¬¸ìœ¼ë¡œ ë“¤ì–´ê°€ëŠ”ì§€
 	bool				m_bBattle;
 	bool				m_bChangeScene;
 	bool				m_bTurn;
-	bool				m_bNext; // ÀÌÁ¦ ´ÙÀ½ À§Ä¡·Î ³Ñ¾î°¡µµ µÇ´ÂÁö
+	bool				m_bNext; // ì´ì œ ë‹¤ìŒ ìœ„ì¹˜ë¡œ ë„˜ì–´ê°€ë„ ë˜ëŠ”ì§€
 	bool				m_bDoorSound;
 	bool				m_bTown;
 	bool				m_bFirstTurn;
@@ -79,5 +79,4 @@ private :
 	void BattlePhaseManagement();
 	void BattlePhaseSound();
 	void ExploreSound();
-	void EnterTheDoor();
 };
